@@ -1,0 +1,25 @@
+def next_permutation(a):
+    i = len(a) - 2
+    while not (i < 0 or a[i] < a[i+1]):
+        i -= 1
+    if i < 0:
+        return False
+    # else
+    j = len(a) - 1
+    while not (a[j] > a[i]):
+        j -= 1
+    a[i], a[j] = a[j], a[i]
+    a[i+1:] = reversed(a[i+1:])
+    return True
+
+def all_perm(a):
+    s=[]
+    s+=a
+    s.sort()
+    while(next_permutation(s)):
+        for i in s:
+            print(i,end="")
+        print()
+
+a=input()
+all_perm(a)

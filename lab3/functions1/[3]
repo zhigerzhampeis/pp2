@@ -1,0 +1,9 @@
+def solve(h,l):
+    a=h*2
+    b=(l-a)//2
+    a=h-b
+    return ("chickens =",a ,"rabbits =",b)
+
+h=int(input())
+l=int(input())
+print(solve(h,l))

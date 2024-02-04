@@ -1,0 +1,5 @@
+def GtoO(a):
+    return 0.0352739619 * a
+
+a=float(input())
+print(GtoO(a))

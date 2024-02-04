@@ -1,0 +1,12 @@
+def uniq(a):
+    v=[]
+    for i in a:
+        if(i in v):
+            continue
+        else:
+            v.append(i)
+    return v
+
+a=[1,2,3,2,1]
+a=uniq(a)
+print(a)

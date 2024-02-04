@@ -1,0 +1,7 @@
+def rev(a):
+    a.reverse()
+
+sent=input().split()
+rev(sent)
+for i in sent:
+    print(i,end=' ')

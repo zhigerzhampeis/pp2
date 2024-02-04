@@ -1,0 +1,18 @@
+def isprime(n):
+    if(n==1): 
+        return False
+    for i in range(2,n):
+        if(n%i==0):
+            return False
+    return True
+
+def filter_prime(a):
+    v=[]
+    for i in a:
+        if(isprime(int(i))):
+            v.append(int(i))
+    return v
+
+nums=input().split()
+nums = filter_prime(nums)
+print(nums)
