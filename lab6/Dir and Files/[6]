@@ -1,0 +1,15 @@
+import os
+import string
+
+path=r"C:\Users\Murat\OneDrive\Рабочий стол\pp2-22B031132\TSIS #6\\Dir and Files"
+os.chdir(path)
+
+if not os.path.exists("Letters"):
+   os.makedirs("Letters")
+
+path=r"C:\Users\Murat\OneDrive\Рабочий стол\pp2-22B031132\TSIS #6\\Dir and Files\Letters"
+os.chdir(path)
+
+for l in string.ascii_uppercase:
+   with open(l + ".txt", "w") as f:
+       f.close()

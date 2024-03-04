@@ -1,0 +1,13 @@
+import os
+
+path=r"C:\Users\Murat\OneDrive\Рабочий стол\pp2-22B031132\TSIS #6\\Dir and Files"
+os.chdir(path)
+
+F_name="Num of Lines.txt"
+with open(F_name) as f:
+    count=0
+    for lines in f:
+        count+=1
+    
+    print(count)
+    f.close()

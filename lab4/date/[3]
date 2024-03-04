@@ -1,0 +1,18 @@
+import datetime
+
+"""
+1)
+x = datetime.datetime.now()     #outcome is str
+s=str(x)
+print(s[:-7])
+
+2)
+print(datetime.datetime.now().replace(microsecond=0))   #outcome is datetime.datetime
+
+3)
+print(datetime.datetime.today().strftime("%Y-%m-%d %H:%M:%S"))   #outcome is str
+
+4)
+print(datetime.datetime.strptime(datetime.datetime.today().strftime("%Y-%m-%d %H:%M:%S"),"%Y-%m-%d %H:%M:%S"))
+#outcome is datetime.datetime
+"""

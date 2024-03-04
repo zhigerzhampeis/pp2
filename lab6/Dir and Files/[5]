@@ -1,0 +1,11 @@
+import os
+
+path=r"C:\Users\Murat\OneDrive\Рабочий стол\pp2-22B031132\TSIS #6\\Dir and Files"
+os.chdir(path)
+
+file_name="New List.txt"
+items = ['User', 'Murat', 'OneDrive', 'Rabochiy stol']
+with open(file_name, 'w') as f:
+    for i in items:
+        f.write(i+"\n")
+    f.close()

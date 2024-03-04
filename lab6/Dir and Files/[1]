@@ -1,0 +1,3 @@
+import os
+
+print(os.listdir(r"C:\Users\Murat\OneDrive\Рабочий стол\pp2-22B031132"))
